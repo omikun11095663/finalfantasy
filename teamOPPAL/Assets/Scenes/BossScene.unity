@@ -722,6 +722,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1560126494, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 679464531, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 679464531, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
+      propertyPath: m_TagString
+      value: CastleMain
+      objectReference: {fileID: 0}
     - target: {fileID: 1720215944, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -806,14 +818,6 @@ PrefabInstance:
     - target: {fileID: 679464532, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
       propertyPath: m_LocalPosition.z
       value: 72.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 679464531, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 679464531, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
-      propertyPath: m_TagString
-      value: CastleMain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed0fdc93833a9c45abf8ff9fe185a99, type: 3}
