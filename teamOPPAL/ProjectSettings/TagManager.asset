@@ -16,6 +16,7 @@ TagManager:
   - Ground
   - Fire
   - Boss
+  - CastleMain
   layers:
   - Default
   - TransparentFX

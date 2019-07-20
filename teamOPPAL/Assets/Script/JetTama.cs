@@ -44,7 +44,7 @@ public class JetTama : MonoBehaviour
             Destroy(TamaPrefab);
 
         }
-        else if (collision.gameObject.CompareTag("wall")|| collision.gameObject.CompareTag("Enemy"))
+        else if (collision.gameObject.CompareTag("wall")|| collision.gameObject.CompareTag("Enemy")|| collision.gameObject.CompareTag("CastleWall") || collision.gameObject.CompareTag("CastleMain"))
         {
             Destroy(TamaPrefab);
         }
