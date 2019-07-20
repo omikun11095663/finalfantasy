@@ -110,7 +110,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5851340723475847606}
   - {fileID: 5851340723911974057}
   m_Father: {fileID: 5851340721860879661}
   m_RootOrder: 0
@@ -253,70 +252,6 @@ MonoBehaviour:
     type: 3}
   seconds: 0
   Smp: {fileID: 3518858424208957788, guid: c0714dffb8924f14a9626352e398f18c, type: 3}
---- !u!1 &5851340723475847605
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5851340723475847606}
-  - component: {fileID: 5851340723475847600}
-  - component: {fileID: 5851340723475847607}
-  m_Layer: 9
-  m_Name: Bomb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5851340723475847606
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851340723475847605}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.55999947, y: -1.9700003, z: 0.18}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5851340722320586434}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5851340723475847600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851340723475847605}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3346b069110cf849b0549da7dc43728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 5
-  pawer: 10
-  LandminePrefab: {fileID: 5397422886400628325, guid: 1d9956b0088061146b7aec1b75d5b8ed,
-    type: 3}
---- !u!114 &5851340723475847607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5851340723475847605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710f37b674e908449aeac4b1a0ef39f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0
-  pawer: 0
-  LandminePrefab: {fileID: 4749086395045611171, guid: 4ec870e6e11bcb14d9d60367aa58357e,
-    type: 3}
 --- !u!1 &5851340723911974056
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +284,7 @@ Transform:
   m_Children:
   - {fileID: 5851340722681386027}
   m_Father: {fileID: 5851340722320586434}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5851340723911974052
 MeshFilter:
