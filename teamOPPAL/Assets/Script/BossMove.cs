@@ -9,10 +9,12 @@ public class BossMove : MonoBehaviour
     //public float MoveSpeed;
     //public float speed;
     //public float attenuation;
-    public Transform target;
-    //public GameObject target;
+    //public Transform target;
+    public GameObject target;
     private NavMeshAgent nav;
     //private Vector3 velocity;
+    //public GameObject CPre;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +33,12 @@ public class BossMove : MonoBehaviour
         //velocity += (target.position - transform.position) * speed;
         //velocity *= attenuation;
         //transform.position += velocity *= Time.deltaTime;
-
-        //nav.destination=target.transform.position;
-        nav.SetDestination(target.position);
+        if (CastleWall.CCount == 0)
+        {
+            nav.destination = target.transform.position;
+        }
+      
+        //nav.SetDestination(target.position);
         
     }
 }
