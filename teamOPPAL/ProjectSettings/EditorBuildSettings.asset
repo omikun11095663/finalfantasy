@@ -4,9 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Scenes: []
-=======
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Title.unity
@@ -30,10 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage4.unity
     guid: eab4ed9f8c0f27a41a6f062186f0dd6a
   - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: 135dd33fe2b99fb4aa0be088da08b3f8
+  - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 383715ab4385d5c469a5604ad99cf041
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: be94efd429aba11418be5918ec4d4e7c
->>>>>>> dc3cfcd6d58736415bfa813a1706ae6c21d71966
   m_configObjects: {}

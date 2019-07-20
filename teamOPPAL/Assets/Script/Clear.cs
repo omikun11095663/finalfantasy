@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Clear : MonoBehaviour
 {
     private GameObject[] enemyObj;
+    private GameObject[] bossObj;
     public GameObject[] pl;
     public static int sceneNum;
     [SerializeField]
@@ -22,6 +23,7 @@ public class Clear : MonoBehaviour
     {
         //Enemyタグをまとめる
         enemyObj = GameObject.FindGameObjectsWithTag("Enemy");
+        bossObj = GameObject.FindGameObjectsWithTag("Boss");
         //player生存
         pl = GameObject.FindGameObjectsWithTag("Player");
         //データの入った箱の数をコンソール画面に表示
@@ -31,11 +33,14 @@ public class Clear : MonoBehaviour
 
         //print(SceneManager.GetActiveScene().buildIndex); 
         //0になったらクリア
-        if (pl.Length<=1)
+        Debug.Log("EnemyTag =" + enemyObj.Length);
+        if (pl.Length == 0)
         {
+            Debug.Log("きたよ");
+
             FadeManager.Instance.LoadScene("GameOver", 1.0f);
         }
-        else if (enemyObj.Length == 0)
+        else if (enemyObj.Length == 0 && bossObj.Length == 0)
         {
             FadeManager.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, 1.0f);
             //SceneManager.LoadScene("Stage1");

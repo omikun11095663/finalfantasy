@@ -5,9 +5,11 @@ using UnityEngine;
 public class HoutouMove : MonoBehaviour
 {
     public float rotateSpeed = 0;
-    public float seconds;
     public float rotationSmooth = 1;
     private Transform Player;
+    private GameObject[] ptag;
+    public Transform After;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,23 @@ public class HoutouMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        seconds += Time.deltaTime;
+        ptag = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log("ptagの長さ = " + ptag.Length);
+
+        if (ptag.Length == 0)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(After.position - transform.position);
+        }
+        else if (ptag.Length != 0)
+
+        {
+            Debug.Log("TargetPlayerしてるよ");
+            TargetPlayer();
+        }
+    }
+
+    void TargetPlayer()
+    {
         Quaternion targetRotation = Quaternion.LookRotation(Player.position - transform.position);
         //Debug.Log("PlayerPosition = " + Player.position);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime

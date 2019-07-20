@@ -12,6 +12,7 @@ public class BossMove : MonoBehaviour
     //public Transform target;
     public GameObject target;
     private NavMeshAgent nav;
+    private GameObject[] ptag;
     //private Vector3 velocity;
     //public GameObject CPre;
 
@@ -21,8 +22,8 @@ public class BossMove : MonoBehaviour
         //NavMeshAgent agent = GetComponent<NavMeshAgent>();
         nav = GetComponent<NavMeshAgent>();
 
-      
-       
+
+
     }
 
     // Update is called once per frame
@@ -33,12 +34,18 @@ public class BossMove : MonoBehaviour
         //velocity += (target.position - transform.position) * speed;
         //velocity *= attenuation;
         //transform.position += velocity *= Time.deltaTime;
-        if (CastleWall.CCount == 0)
-        {
-            nav.destination = target.transform.position;
-        }
-      
+
         //nav.SetDestination(target.position);
-        
+        ptag = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log("ptagの長さ = " + ptag.Length);
+
+        if (ptag.Length != 0)
+        {
+            if (CastleWall.CCount == 0)
+            {
+
+                nav.destination = target.transform.position;
+            }
+        }   
     }
 }

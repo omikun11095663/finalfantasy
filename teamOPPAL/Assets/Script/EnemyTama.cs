@@ -35,14 +35,14 @@ public class EnemyTama : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player")
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("PlayerTama") || collision.gameObject.CompareTag("EnemyTama")
             || collision.gameObject.CompareTag("Tama") || collision.gameObject.CompareTag("Bomb"))
         {
             audioSource.PlayOneShot(destroy);
             Destroy(collision.gameObject);
             Destroy(TamaPrefab);
         }
-        else if (collision.gameObject.CompareTag("wall")/* || collision.gameObject.CompareTag("FrgileWall")*/)
+        else if (collision.gameObject.CompareTag("wall") || collision.gameObject.CompareTag("FragileWall"))
         {
             TamaDeadth += 1;
 
